@@ -24,7 +24,7 @@ pi.set_mode(POWER_GPIO, pigpio.OUTPUT)
 pi.write(POWER_GPIO, 0)  # Изначально выключено
 
 # Загрузка модели YOLO
-model = YOLO("yolov8n.pt")  # Используем предобученную YOLOv8 nano
+model = YOLO("best.pt")  # Используем предобученную YOLOv8 nano
 
 
 def set_servo_angle(pin, angle):
